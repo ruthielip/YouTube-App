@@ -51,6 +51,10 @@ const Item = styled.div`
    gap: 20px;
    cursor: pointer;
    padding: 7.5px 0px;
+
+   &:hover{
+     background-color: ${({theme}) => theme.soft};
+   }
 `
 
 const Hr = styled.hr`
@@ -174,7 +178,7 @@ const Menu = ({dark, setDark}) => {
          </Item>
          <Item onClick={()=>setDark(!dark)}>
            <SettingsBrightnessIcon />
-           Light Mode
+           {dark ? "Light" : "Dark"} Mode
          </Item>
        </Wrapper>
     </Container>
