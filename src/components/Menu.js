@@ -125,10 +125,12 @@ const Menu = ({dark, setDark}) => {
 
          <Login>
             Sign in to like videos, comment and subscribe.
+            <Link to='signin' style={{textDecoration:'none'}}>
             <Button>
               <PersonOutlineIcon />
               SIGN IN
             </Button>
+            </Link>
          </Login>
 
          <Hr />

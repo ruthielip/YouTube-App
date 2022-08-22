@@ -1,6 +1,7 @@
 import Menu from './components/Menu';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import Signin from './pages/Signin';
 import Video from './pages/Video';
 import styled, {ThemeProvider} from 'styled-components';
 import { darkMode, lightMode } from './utils/Mode';
@@ -35,6 +36,7 @@ function App() {
             <Routes>
               <Route path='/'>
                 <Route index element={<Home/>}/>
+                <Route path='signin' element={<Signin/>}/>
                 <Route path='video'>
                   <Route path=':id' element={<Video/>} />
                 </Route>
